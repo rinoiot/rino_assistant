@@ -1,0 +1,36 @@
+identity:
+  name: get_devices
+  author: rino
+  label:
+    en_US: Get all smart devices in the current home
+    zh_Hans: 获取当前家庭下所有智能设备
+description:
+  human:
+    en_US: Get all smart devices in the current home
+    zh_Hans: 获取当前家庭下所有智能设备
+  llm: 根据homeId从API获取当前家庭下所有智能设备，返回数据中包含群组和场景数据。
+parameters:
+  - name: homeId
+    type: string
+    required: true
+    label:
+      en_US: Home Id
+      zh_Hans: 家庭ID
+    human_description:
+      en_US: Home Id
+      zh_Hans: 家庭ID
+    llm_description: homeId参数，用于从API获取家庭下所有可被控制的智能设备。
+    form: llm
+  - name: apiUrl
+    type: string
+    required: true
+    label:
+      en_US: API Url
+      zh_Hans: API Url
+    human_description:
+      en_US: API Url
+      zh_Hans: API Url
+    form: form
+extra:
+  python:
+    source: tools/get_devices.py

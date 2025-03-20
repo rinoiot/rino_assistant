@@ -1,0 +1,36 @@
+identity:
+  name: get_share_device
+  author: rino
+  label:
+    en_US: Gets all smart devices shared with the current user
+    zh_Hans: 获取所有分享给当前用户的智能设备
+description:
+  human:
+    en_US: Gets all smart devices shared with the current user
+    zh_Hans: 获取所有分享给当前用户的智能设备
+  llm: 根据userId从API获取所有分享给当前用户的智能设备，返回数据中包含群组和场景数据。
+parameters:
+  - name: userId
+    type: string
+    required: true
+    label:
+      en_US: User Id
+      zh_Hans: 用户ID
+    human_description:
+      en_US: User Id
+      zh_Hans: 用户ID
+    llm_description: userId参数，用于提交给API获取获取所有分享给当前用户的智能设备。
+    form: llm
+  - name: apiUrl
+    type: string
+    required: true
+    label:
+      en_US: API Url
+      zh_Hans: API Url
+    human_description:
+      en_US: API Url
+      zh_Hans: API Url
+    form: form
+extra:
+  python:
+    source: tools/get_share_device.py

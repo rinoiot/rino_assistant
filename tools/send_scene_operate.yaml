@@ -1,0 +1,36 @@
+identity:
+  name: send_scene_operate
+  author: rino
+  label:
+    en_US: Send scene operation instructions
+    zh_Hans: 下发场景操作指令
+description:
+  human:
+    en_US: Send scene operation instructions
+    zh_Hans: 下发场景操作指令
+  llm: 将对场景进行控制的json数据发送给API
+parameters:
+  - name: data
+    type: string
+    required: true
+    label:
+      en_US: Control instruction json data
+      zh_Hans: 控制指令json数据
+    human_description:
+      en_US: Control instruction json data
+      zh_Hans: 控制指令json数据
+    llm_description: 控制指令json数据，这是发送给API对场景进行控制的数据。
+    form: llm
+  - name: apiUrl
+    type: string
+    required: true
+    label:
+      en_US: API Url
+      zh_Hans: API Url
+    human_description:
+      en_US: API Url
+      zh_Hans: API Url
+    form: form
+extra:
+  python:
+    source: tools/send_scene_operate.py

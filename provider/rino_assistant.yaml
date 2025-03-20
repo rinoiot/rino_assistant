@@ -1,0 +1,36 @@
+identity:
+  author: Rino
+  name: rino_assistant
+  label:
+    en_US: Rino Assistant
+    zh_Hans: RINO智能助理
+  description:
+    en_US: Get smart devices in the home from the RINOIOT platform and use large models to control the devices
+    zh_Hans: 从RINOIOT平台获取家庭下智能设备并使用大模型对设备进行控制
+  icon: icon.svg
+  tags:
+    - utilities
+    - productivity
+credentials_for_provider: #添加 credentials_for_provider 字段
+  rino_api_key:
+    type: secret-input
+    required: true
+    label:
+      en_US: RINO API key
+      zh_Hans: RINO API key
+    placeholder:
+      en_US: Please input your API key
+      zh_Hans: 请输入你的 API key
+    help:
+      en_US: Get your API key from RINO
+      zh_Hans: 从 RINO 获取您的 API key
+    url: https://iot.rinoiot.com/
+tools:
+  - tools/get_devices.yaml
+  - tools/get_share_device.yaml
+  - tools/send_device_operate.yaml
+  - tools/send_group_operate.yaml
+  - tools/send_scene_operate.yaml
+extra:
+  python:
+    source: provider/rino_assistant.py
