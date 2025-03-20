@@ -1,6 +1,6 @@
 version: 0.0.1
 type: plugin
-author: rino
+author: rinoiot
 name: rino_assistant
 label:
   en_US: RINO Assistant
