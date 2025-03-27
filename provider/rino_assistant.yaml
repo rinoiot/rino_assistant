@@ -26,11 +26,13 @@ credentials_for_provider: #添加 credentials_for_provider 字段
       zh_Hans: 从 RINO 获取您的 API key
     url: https://iot.rinoiot.com/
 tools:
-  - tools/get_devices.yaml
-  - tools/get_share_device.yaml
-  - tools/send_device_operate.yaml
-  - tools/send_group_operate.yaml
-  - tools/send_scene_operate.yaml
+  #  - tools/get_home_device.yaml
+  #  - tools/get_share_device.yaml
+  #  - tools/send_device_operate.yaml
+  #  - tools/send_group_operate.yaml
+  #  - tools/send_scene_operate.yaml
+  - tools/get_all_device.yaml
+  - tools/send_operate.yaml
 extra:
   python:
     source: provider/rino_assistant.py

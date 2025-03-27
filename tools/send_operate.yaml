@@ -1,5 +1,5 @@
 identity:
-  name: send_device_operate
+  name: send_operate
   author: rinoiot
   label:
     en_US: Send device operation instructions
@@ -8,7 +8,7 @@ description:
   human:
     en_US: Send device operation instructions
     zh_Hans: 下发设备操作指令
-  llm: 将对智能设备进行控制的json数据发送给API
+  llm: 将对设备、群组和场景等进行控制的json数据发送给API
 parameters:
   - name: data
     type: string
@@ -19,18 +19,18 @@ parameters:
     human_description:
       en_US: Control instruction json data
       zh_Hans: 控制指令json数据
-    llm_description: 控制指令json数据，这是发送给API对设备进行控制的数据。
+    llm_description: 控制指令，这是发送给API对设备、群组和场景等进行控制的json数据。
     form: llm
   - name: apiUrl
     type: string
     required: true
     label:
-      en_US: API Url
-      zh_Hans: API Url
+      en_US: API URL
+      zh_Hans: API URL
     human_description:
-      en_US: API Url
-      zh_Hans: API Url
+      en_US: API URL
+      zh_Hans: API URL
     form: form
 extra:
   python:
-    source: tools/send_device_operate.py
+    source: tools/send_operate.py

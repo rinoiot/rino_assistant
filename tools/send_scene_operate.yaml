@@ -1,6 +1,6 @@
 identity:
   name: send_scene_operate
-  author: rino
+  author: rinoiot
   label:
     en_US: Send scene operation instructions
     zh_Hans: 下发场景操作指令

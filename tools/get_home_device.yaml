@@ -1,6 +1,6 @@
 identity:
   name: get_devices
-  author: rino
+  author: rinoiot
   label:
     en_US: Get all smart devices in the current home
     zh_Hans: 获取当前家庭下所有智能设备
@@ -33,4 +33,4 @@ parameters:
     form: form
 extra:
   python:
-    source: tools/get_devices.py
+    source: tools/get_home_device.py

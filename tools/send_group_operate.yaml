@@ -1,6 +1,6 @@
 identity:
   name: send_group_operate
-  author: rino
+  author: rinoiot
   label:
     en_US: Send group operation instructions
     zh_Hans: 下发群组操作指令
