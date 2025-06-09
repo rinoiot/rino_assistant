@@ -1,0 +1,26 @@
+identity:
+  name: get_time
+  author: rinoiot
+  label:
+    en_US: Get current time and weekday information for specified timezone
+    zh_Hans: 获取指定时区的当前时间和星期信息
+description:
+  human:
+    en_US: Get current time and weekday information for specified timezone, including formatted time, weekday name, UTC offset, and detailed time components
+    zh_Hans: 获取指定时区的当前时间和星期信息，包括格式化时间、星期名称、UTC偏移量和详细时间组件
+  llm: Get current time and weekday information for the specified timezone, returning JSON data containing formatted time, English weekday name, UTC offset, and detailed time components including year, month, day, hour, minute, and second.
+parameters:
+  - name: timezone
+    type: string
+    required: true
+    label:
+      en_US: Timezone
+      zh_Hans: 时区
+    human_description:
+      en_US: Timezone identifier (e.g., Asia/Shanghai, America/New_York, Europe/London)
+      zh_Hans: 时区标识符（例如：Asia/Shanghai, America/New_York, Europe/London）
+    llm_description: Timezone identifier supporting standard IANA timezone format, such as Asia/Shanghai, America/New_York, Europe/London, etc.
+    form: llm
+extra:
+  python:
+    source: tools/get_time.py

@@ -33,6 +33,7 @@ tools:
   #  - tools/send_scene_operate.yaml
   - tools/get_all_device.yaml
   - tools/send_operate.yaml
+  - tools/get_time.yaml
 extra:
   python:
     source: provider/rino_assistant.py

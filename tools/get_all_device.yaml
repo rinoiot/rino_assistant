@@ -2,13 +2,13 @@ identity:
   name: get_all_device
   author: rinoiot
   label:
-    en_US: Get all smart devices that can be controlled
-    zh_Hans: 获取所有可被控制的智能设备
+    en_US: Get All Controllable Smart Devices
+    zh_Hans: 获取所有可控制的智能设备
 description:
   human:
-    en_US: Get all smart devices that can be controlled
-    zh_Hans: 获取所有可被控制的智能设备
-  llm: 根据homeId和userId从API获取所有可被控制的智能设备，返回数据中包含设备、群组和场景数据。
+    en_US: Retrieve all controllable smart devices, groups, and scenes from the specified home
+    zh_Hans: 从指定家庭获取所有可控制的智能设备、群组和场景
+  llm: Retrieve all controllable smart devices, device groups, and scene data from the specified home using homeId and userId parameters via API, returning a complete list of device control information.
 parameters:
   - name: homeId
     type: string
@@ -19,7 +19,7 @@ parameters:
     human_description:
       en_US: Home Id
       zh_Hans: 家庭ID
-    llm_description: homeId参数，用于从API获取所有可被控制的智能设备。
+    llm_description: Home ID parameter used to specify the home for retrieving device information, must be a valid home identifier.
     form: llm
   - name: userId
     type: string
@@ -30,7 +30,7 @@ parameters:
     human_description:
       en_US: User Id
       zh_Hans: 用户ID
-    llm_description: userId参数，用于从API获取所有可被控制的智能设备。
+    llm_description: User ID parameter used to verify user identity and permissions, ensuring only accessible device information is retrieved.
     form: llm
   - name: apiUrl
     type: string

@@ -2,13 +2,13 @@ identity:
   name: send_operate
   author: rinoiot
   label:
-    en_US: Send device operation instructions
-    zh_Hans: 下发设备操作指令
+    en_US: Send Device Control Commands
+    zh_Hans: 发送设备控制指令
 description:
   human:
-    en_US: Send device operation instructions
-    zh_Hans: 下发设备操作指令
-  llm: 将对设备、群组和场景等进行控制的json数据发送给API
+    en_US: Send control commands to smart devices, groups, or scenes
+    zh_Hans: 向智能设备、群组或场景发送控制指令
+  llm: Send JSON format instruction data for device control, group operations, or scene execution to the API interface, enabling remote control operations for smart home devices.
 parameters:
   - name: data
     type: string
@@ -19,7 +19,7 @@ parameters:
     human_description:
       en_US: Control instruction json data
       zh_Hans: 控制指令json数据
-    llm_description: 控制指令，这是发送给API对设备、群组和场景等进行控制的json数据。
+    llm_description: JSON data containing control instructions with device ID, operation type, parameter values, and other information for specific control operations on smart devices, device groups, or scenes.
     form: llm
   - name: apiUrl
     type: string
